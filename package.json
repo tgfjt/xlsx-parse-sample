@@ -1,0 +1,17 @@
+{
+  "name": "xlsx-sample",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app && open public/html/index.html",
+    "clean": "ls public/html/* | xargs rm -fr"
+  },
+  "author": "tgfjt",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0",
+    "lodash": "^2.4.1",
+    "moment": "^2.8.4",
+    "xlsx": "^0.7.12"
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/favicon.ico">
+</head>
+<body>
+  <section class="contents">
+    <header>
+      <h1>{{title}}</h1>
+    </header>
+    <table class="tableborder">
+      <tr>
+        <th class="tableborder">No.</th>
+        <th class="tableborder">画面ID</th>
+        <th class="tableborder">画面名</th>
+        <th class="tableborder">分類</th>
+        <th class="tableborder">開始日</th>
+        <th class="tableborder">完了日</th>
+      </tr>
+{{#row}}
+      <tr class="{{category}}">
+        <td class="tableborder">{{number}}</td>
+        <td class="tableborder">{{id}}</td>
+        <td class="tableborder">{{name}}</td>
+        <td class="tableborder">{{category}}</td>
+        <td class="tableborder">{{start}}</td>
+        <td class="tableborder">{{end}}</td>
+      </tr>
+{{/row}}
+    </table>
+    <footer>
+      {{> copyright}}
+    </footer>
+  </section>
+</body>
+</html>
